@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AUTOESTATUS</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:14px}
+    h1{margin:0 0 6px 0;font-size:20px}
+    .meta{color:#555;margin:0 0 14px 0;font-size:13px}
+    table{border-collapse:collapse;width:100%}
+    th,td{border:1px solid #ddd;padding:8px}
+    th{background:#f5f5f5;text-align:left;position:sticky;top:0}
+    tr:nth-child(even){background:#fafafa}
+    td.num{text-align:right}
+  </style>
+</head>
+<body>
+  <h1>AUTOESTATUS</h1>
+  <p class="meta" id="meta">Cargando…</p>
+
+  <table>
+    <thead>
+      <tr><th>Producto</th><th>Fase</th><th>Cantidad</th></tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+<script>
+async function main(){
+  // cache-bust para evitar caché agresivo
+  const url = "recuento_productos.tsv?ts=" + Date.now();
+  const res = await fetch(url, {cache:"no-store"});
+  const txt = await res.text();
+
+  const lines = txt.split(/\r?\n/).filter(l => l.trim().length);
+  // Si tu TSV tiene:
+  // AUTOESTATUS vX
+  // (línea en blanco)
+  // **Producto**  **Fase**  **Cantidad**
+  // lo limpiamos
+  let i = 0;
+  if (lines[i] && lines[i].toUpperCase().startsWith("AUTOESTATUS")) i++;
+  if (lines[i] && lines[i].trim()==="") i++;
+  if (lines[i] && lines[i].includes("Producto")) i++; // header
+
+  const tbody = document.getElementById("tbody");
+  tbody.innerHTML = "";
+
+  let count = 0;
+  for (; i < lines.length; i++){
+    const cols = lines[i].split("\t");
+    if (cols.length < 2) continue;
+
+    const tr = document.createElement("tr");
+    const td1 = document.createElement("td"); td1.textContent = (cols[0]||"").trim();
+    const td2 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
+    const td3 = document.createElement("td"); td3.textContent = (cols[2]||"").trim(); td3.className="num";
+
+    tr.append(td1,td2,td3);
+    tbody.appendChild(tr);
+    count++;
+  }
+
+  document.getElementById("meta").textContent =
+    `Actualizado automáticamente. Filas: ${count}. (Recarga para ver lo más reciente.)`;
+}
+main().catch(e => document.getElementById("meta").textContent = "Error cargando TSV: " + e);
+</script>
+</body>
+</html>
