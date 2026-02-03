@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <h1>AUTOESTATUS V1.0.6.</h1>
+  <h1>AUTOESTATUS V1.0.7.</h1>
   <p class="meta" id="meta">Cargando…</p>
 
   <table>
@@ -76,7 +76,7 @@ async function main(){
     meta.textContent = lmText
     ? `Última actualización: ${lmText} · Filas: ${count}`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
-}
+
 }
 main().catch(e => document.getElementById("meta").textContent = "Error cargando TSV: " + e);
 </script>
