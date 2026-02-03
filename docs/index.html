@@ -31,6 +31,16 @@ async function main(){
   // cache-bust para evitar caché agresivo
   const url = "recuento_productos.tsv?ts=" + Date.now();
   const res = await fetch(url, {cache:"no-store"});
+
+  // Mostrar hora (por favor funciona)
+  const lm = res.headers.get("last-modified");
+  let lmText = "";
+  if (lm) {
+    const d = new Date(lm);
+    // Mostrar en hora local del telefono (en teoria innecesario pero igual)
+    lmText = d.toLocaleString();
+  }
+  
   const txt = await res.text();
 
   const lines = txt.split(/\r?\n/).filter(l => l.trim().length);
