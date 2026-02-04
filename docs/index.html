@@ -17,7 +17,7 @@
     .center { text-align: center; }
 </head>
 <body>
-  <h1 class="center">ESTATUS DE MESAS v1.0.9</h1>
+  <h1>ESTATUS DE MESAS</h1>
   <p class="meta" id="meta">Cargando…</p>
 
   <table>
@@ -29,7 +29,7 @@
 <h1 class="center">CESANTONI</h1>
 <script>
 async function main(){
-  // cache-bust para evitar caché agresivo
+  // cache-bust
   const url = "recuento_productos.tsv?ts=" + Date.now();
   const res = await fetch(url, {cache:"no-store"});
 
@@ -45,11 +45,7 @@ async function main(){
   const txt = await res.text();
 
   const lines = txt.split(/\r?\n/).filter(l => l.trim().length);
-  // Si tu TSV tiene:
-  // AUTOESTATUS vX
-  // (línea en blanco)
-  // **Producto**  **Fase**  **Cantidad**
-  // lo limpiamos
+  // **Producto**  **Fase**  **Cantidad** Se remueve los del tsv para no tener doble header
   let i = 0;
   if (lines[i] && lines[i].toUpperCase().startsWith("AUTOESTATUS")) i++;
   if (lines[i] && lines[i].trim()==="") i++;
@@ -75,7 +71,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count}`
+    ? `Última actualización: ${lmText} · Filas: ${count} v1.1.2`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
