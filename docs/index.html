@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  h1 {text-align: center;}
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AUTOESTATUS</title>
   <style>
@@ -15,9 +14,10 @@
     tr:nth-child(even){background:#fafafa}
     td.num{text-align:right}
   </style>
+    .center { text-align: center; }
 </head>
 <body>
-  <h1>ESTATUS DE MESAS v1.0.8</h1>
+  <h1 class="center">ESTATUS DE MESAS v1.0.9</h1>
   <p class="meta" id="meta">Cargando…</p>
 
   <table>
@@ -26,7 +26,7 @@
     </thead>
     <tbody id="tbody"></tbody>
   </table>
-<h1>CESANTONI</h1>
+<h1 class="center">CESANTONI</h1>
 <script>
 async function main(){
   // cache-bust para evitar caché agresivo
