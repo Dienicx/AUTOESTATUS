@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <h1 class="center">ESTATUS DE MESAS</h1>
+  <h1 class="center">PAGINA EN MANTENIMIENTO</h1>
   <p class="meta" id="meta">Cargando…</p>
 
   <table>
@@ -57,14 +57,15 @@ async function main(){
   let count = 0;
   for (; i < lines.length; i++){
     const cols = lines[i].split("\t");
-    if (cols.length < 2) continue;
+    if (cols.length < 4) continue;
 
     const tr = document.createElement("tr");
     const td1 = document.createElement("td"); td1.textContent = (cols[0]||"").trim();
-    const td2 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
-    const td3 = document.createElement("td"); td3.textContent = (cols[2]||"").trim(); td3.className="num";
+    const td1 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
+    const td2 = document.createElement("td"); td3.textContent = (cols[2]||"").trim();
+    const td3 = document.createElement("td"); td4.textContent = (cols[3]||"").trim(); td4.className="num";
 
-    tr.append(td1,td2,td3);
+    tr.append(td1,td2,td3,td4);
     tbody.appendChild(tr);
     count++;
   }
