@@ -61,9 +61,9 @@ async function main(){
 
     const tr = document.createElement("tr");
     const td1 = document.createElement("td"); td1.textContent = (cols[0]||"").trim();
-    const td1 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
-    const td2 = document.createElement("td"); td3.textContent = (cols[2]||"").trim();
-    const td3 = document.createElement("td"); td4.textContent = (cols[3]||"").trim(); td4.className="num";
+    const td2 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
+    const td3 = document.createElement("td"); td3.textContent = (cols[2]||"").trim();
+    const td4 = document.createElement("td"); td4.textContent = (cols[3]||"").trim(); td4.className="num";
 
     tr.append(td1,td2,td3,td4);
     tbody.appendChild(tr);
