@@ -17,7 +17,7 @@
   </style>
 </head>
 <body>
-  <h1 class="center">ESTATUS DE MESAS</h1>
+  <h1 class="center">ESTATUS EN MANTENIMIENTO</h1>
   <p class="meta" id="meta">Cargando…</p>
 
   <table>
@@ -64,10 +64,9 @@ async function main(){
     const tr = document.createElement("tr");
     const td1 = document.createElement("td"); td1.textContent = (cols[0]||"").trim();
     const td2 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
-    const td3 = document.createElement("td"); td2.textContent = (cols[2]||"").trim();
-    const td4 = document.createElement("td"); td3.textContent = (cols[3]||"").trim(); td4.className="num";
-    const td5 = document.createElement("td"); td4.textContent = (cols[4]||"").trim(); td5.className="num";
-
+    const td3 = document.createElement("td"); td3.textContent = (cols[2]||"").trim();
+    const td4 = document.createElement("td"); td4.textContent = (cols[3]||"").trim(); td4.className="num";
+    const td5 = document.createElement("td"); td5.textContent = (cols[4]||"").trim(); td5.className="num";
     tr.append(td1,td2,td3,td4,td5);
     tbody.appendChild(tr);
     count++;
@@ -75,7 +74,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.2`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.3`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
