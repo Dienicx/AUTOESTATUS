@@ -21,15 +21,18 @@
       border-radious: 8px;
     }
     table{
-      width: 160px;
+      min-width: 240px;
     }
     th, td{
       white-space: nowrap;
     }
-    /* th.col-prod, td,col-prod{
+    th.col-prod, td,col-prod{
       max-width: 160px;
       width: 160px;
-    } */
+      overflow: hidden;
+      text-overflow: elipsis;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -38,7 +41,7 @@
 <div class="table-wrap">
   <table>
     <thead>
-      <tr><th>Producto</th><th>Formato</th><th>Fase</th><th>Cantidad</th><th>Volumen(m³)</th></tr>
+      <tr><th class="col-prod">Producto</th><th>Formato</th><th>Fase</th><th>Cantidad</th><th>Volumen(m³)</th></tr>
     </thead>
     <tbody id="tbody"></tbody>
   </table>
@@ -76,14 +79,15 @@ async function main(){
     const cols = lines[i].split("\t");
     while (cols.lenght < 5 )
       cols.push("");
-   // if (cols.length < 4) continue;
+  
 
     const tr = document.createElement("tr");
-    const td1 = document.createElement("td"); td1.textContent = (cols[0]||"").trim();
+    const td1 = document.createElement("td"); td1.className = "col-prod"; td1.textContent = (cols[0]||"").trim();
     const td2 = document.createElement("td"); td2.textContent = (cols[1]||"").trim();
     const td3 = document.createElement("td"); td3.textContent = (cols[2]||"").trim();
     const td4 = document.createElement("td"); td4.textContent = (cols[3]||"").trim(); td4.className="num";
     const td5 = document.createElement("td"); td5.textContent = (cols[4]||"").trim(); td5.className="num";
+    
     tr.append(td1,td2,td3,td4,td5);
     tbody.appendChild(tr);
     count++;
@@ -91,7 +95,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.2`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.3`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
