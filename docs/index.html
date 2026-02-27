@@ -21,7 +21,7 @@
       border-radious: 8px;
     }
     table{
-      min-width: 820px;
+      min-width: 420px;
     }
     th, td{
       white-space: nowrap;
@@ -29,7 +29,7 @@
   </style>
 </head>
 <body>
-  <h1 class="center">ESTATUS DE MESAS</h1>
+  <h1 class="center">ESTATUS EN MANTENIMIENTO</h1>
   <p class="meta" id="meta">Cargando…</p>
 <div class="table-wrap">
   <table>
@@ -87,7 +87,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.6`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.7`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
