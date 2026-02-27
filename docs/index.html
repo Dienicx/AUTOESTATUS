@@ -14,18 +14,31 @@
     tr:nth-child(even){background:#fafafa}
     td.num{text-align:right}
     .center { text-align: center; }
+    .table-wrap{
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid #ddd;
+      border-radious: 8px;
+    }
+    table{
+      min-width: 820px;
+    }
+    th, td{
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
   <h1 class="center">ESTATUS DE MESAS</h1>
   <p class="meta" id="meta">Cargando…</p>
-
+<div class="table-wrap">
   <table>
     <thead>
       <tr><th>Producto</th><th>Formato</th><th>Fase</th><th>Cantidad</th><th>Volumen(m³)</th></tr>
     </thead>
     <tbody id="tbody"></tbody>
   </table>
+</div>
 <h1 class="center">CESANTONI</h1>
 <script>
 async function main(){
@@ -74,7 +87,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.5`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.6`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
