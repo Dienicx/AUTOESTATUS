@@ -18,7 +18,7 @@
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       border: 1px solid #ddd;
-      border-radious: 8px;
+      border-radius: 8px;
     }
     table{
       min-width: 240px;
@@ -26,16 +26,18 @@
     th, td{
       white-space: nowrap;
     }
-    th.col-prod, td,col-prod{
+    th.col-prod, td.col-prod{
       max-width: 110px;
       width: 110px;
       white-space: normal;
       position: sticky;
+      z-index: 3;
       left: 0;
       background: white;
     }
     thead th.col-prod{
   background: #f5f5f5;
+  z-index: 4;
     }
   </style>
 </head>
@@ -81,8 +83,7 @@ async function main(){
   let count = 0;
   for (; i < lines.length; i++){
     const cols = lines[i].split("\t");
-    while (cols.lenght < 5 )
-      cols.push("");
+    while (cols.lenght < 5 ) cols.push("");
   
 
     const tr = document.createElement("tr");
@@ -99,7 +100,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.6`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.8`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
