@@ -27,11 +27,9 @@
       white-space: nowrap;
     }
     th.col-prod, td,col-prod{
-      max-width: 160px;
-      width: 160px;
-      overflow: hidden;
-      text-overflow: elipsis;
-      white-space: nowrap;
+      max-width: 110px;
+      width: 110px;
+      white-space: normal;
     }
   </style>
 </head>
@@ -95,7 +93,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.3`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.4`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
