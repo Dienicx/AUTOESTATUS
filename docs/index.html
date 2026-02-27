@@ -30,6 +30,8 @@
       max-width: 110px;
       width: 110px;
       white-space: normal;
+      position: sticky;
+      left: 0;
     }
   </style>
 </head>
@@ -93,7 +95,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.4`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.3.5`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
