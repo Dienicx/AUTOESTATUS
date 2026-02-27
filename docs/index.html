@@ -17,12 +17,12 @@
   </style>
 </head>
 <body>
-  <h1 class="center">ESTATUS EN MANTENIMIENTO</h1>
+  <h1 class="center">ESTATUS DE MESAS</h1>
   <p class="meta" id="meta">Cargando…</p>
 
   <table>
     <thead>
-      <tr><th>Producto</th><th>Formato</th><th>Fase</th><th>#</th><th>Volumen(m³)</th></tr>
+      <tr><th>Producto</th><th>Formato</th><th>Fase</th><th>Cantidad</th><th>Volumen(m³)</th></tr>
     </thead>
     <tbody id="tbody"></tbody>
   </table>
@@ -74,7 +74,7 @@ async function main(){
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.3`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.2.5`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
