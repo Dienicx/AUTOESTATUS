@@ -39,6 +39,9 @@
   background: #f5f5f5;
   z-index: 4;
     }
+    tr.highlight td{
+  font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -96,11 +99,15 @@ async function main(){
     tr.append(td1,td2,td3,td4,td5);
     tbody.appendChild(tr);
     count++;
+    const label = (cols[0] || "").trim();
+    if (label === "Mesa vacia disponible" || label.startsWith("Total m2 ")) {
+    tr.classList.add("highlight");
+}
   }
 
    const meta = document.getElementById("meta");
     meta.textContent = lmText
-    ? `Última actualización: ${lmText} · Filas: ${count} | v1.4.0`
+    ? `Última actualización: ${lmText} · Filas: ${count} | v1.4.1`
     : `Filas: ${count} · (No se pudo leer la hora de actualización)`;
 
 }
