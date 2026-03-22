@@ -1,7 +1,7 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Merlot Wood	80x160	Cocido	9	1,382.400
+Merlot Wood	80x160	Cocido	10	1,536.000
 Sunset Maple	80x160	Cocido	8	1,228.800
 Calajan Fumo	20x120	Cocido	7	1,344.000
 Vicenzo	60x120	Cocido	5	864.000
@@ -10,8 +10,8 @@ Prueba Pulido	80x160	Pulido	1	153.600
 Sunset Maple Rec	80x160	Rectificado	6	921.600
 Merlot Wood Rec	80x160	Rectificado	5	768.000
 Calajan Fumo Rectificado	20x120	Rectificado	4	768.000
-Mesa vacia disponible				32
-Total m² Cocido				4,972.800
+Mesa vacia disponible				30
+Total m² Cocido				5,126.400
 Total m² Pulido				153.600
 Total m² Rectificado				2,457.600
-Total m²				7,584.000
+Total m²				7,737.600
