@@ -3,9 +3,9 @@
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
 Marconi	60x120	Cocido	14	2,419.200
 Blendwood Canela	20x120	Cocido	5	960.000
-Blendwood Fumo	20x120	Cocido	3	576.000
 Leighton Light	60x120	Cocido	3	518.400
 Leighton light retrabajo	60x120	Cocido	3	518.400
+Blendwood Fumo	20x120	Cocido	2	384.000
 Fiorentino Note	60x120	Cocido	2	345.600
 Kiel Dark 60x60	60x60	Cocido	2	345.600
 Marconi Retrabajo	60X120	Cocido	2	345.600
@@ -17,10 +17,10 @@ Santorini Pulido	60x120	Pulido	4	691.200
 Leighton light PULIDO	60X120	Pulido	3	518.400
 Fiorentino Plata Pulido	60x120	Pulido	1	172.800
 Caravita Platino MATE REC	60X120	Rectificado	5	864.000
+Kiel Dark 60x60 Rectificado	60x60	Rectificado	2	345.600
 Blendwood Fumo Rectificado	20x120	Rectificado	1	192.000
-Kiel Dark 60x60 Rectificado	60x60	Rectificado	1	172.800
-Mesa vacia disponible				23
-Total m² Cocido				6,720.000
+Mesa vacia disponible				24
+Total m² Cocido				6,528.000
 Total m² Pulido				1,382.400
-Total m² Rectificado				1,228.800
-Total m²				9,331.200
+Total m² Rectificado				1,401.600
+Total m²				9,312.000
