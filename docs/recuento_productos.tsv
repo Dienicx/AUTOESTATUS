@@ -1,14 +1,14 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Marconi	60x120	Cocido	9	1,555.200
+Marconi	60x120	Cocido	10	1,728.000
 Blendwood Canela	20x120	Cocido	5	960.000
 Blendwood Fumo	20x120	Cocido	3	576.000
+Caravita Platino MATE	60x120	Cocido	2	345.600
 Fiorentino Note	60x120	Cocido	2	345.600
 Fiorentino Plata P/Retrabajo	60x120	Cocido	2	345.600
+Kiel Sand	60x60	Cocido	2	345.600
 Marconi Retrabajo	60X120	Cocido	2	345.600
-Caravita Platino MATE	60x120	Cocido	1	172.800
-Kiel Sand	60x60	Cocido	1	172.800
 Livia Retrabajo	60x120	Cocido	1	172.800
 Leighton light PULIDO	60X120	Pulido	5	864.000
 Marconi Pulido	60x120	Pulido	3	518.400
@@ -18,8 +18,8 @@ Leighton Light Rectificado	60x120	Rectificado	2	345.600
 Blendwood Fumo Rectificado	20x120	Rectificado	1	192.000
 Caravita Platino MATE REC	60X120	Rectificado	1	172.800
 Kiel Sand Rectificado	60x60	Rectificado	1	172.800
-Mesa vacia disponible				30
-Total m² Cocido				4,646.400
+Mesa vacia disponible				29
+Total m² Cocido				5,164.800
 Total m² Pulido				1,555.200
 Total m² Rectificado				1,747.200
-Total m²				7,948.800
+Total m²				8,467.200
