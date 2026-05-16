@@ -6,12 +6,12 @@ Zadar	45x90	Cocido	2	324.000
 Bizcocho	60x120	Cocido	1	172.800
 Kiel Gray	60x120	Cocido	1	172.800
 Valenciano Retrabajo	80x160	Cocido	1	153.600
-Valenciano Pulido	80x160	Pulido	3	460.800
+Valenciano Pulido	80x160	Pulido	2	307.200
+Valenciano Rec	80x160	Rectificado	4	614.400
 Zadar Rectificado	45x90	Rectificado	4	648.000
-Valenciano Rec	80x160	Rectificado	3	460.800
-Kiel Gray 60x120 REC	60X120	Rectificado	2	345.600
-Mesa vacia disponible				48
+Kiel Gray 60x120 REC	60X120	Rectificado	1	172.800
+Mesa vacia disponible				47
 Total m² Cocido				823.200
-Total m² Pulido				460.800
-Total m² Rectificado				1,454.400
-Total m²				2,738.400
+Total m² Pulido				307.200
+Total m² Rectificado				1,435.200
+Total m²				2,565.600
