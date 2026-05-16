@@ -1,18 +1,19 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Riviera	80x120	Cocido	12	
-Zadar	45x90	Cocido	3	486.000
+Riviera	80x120	Cocido	11	
 Santo Tomas	45x90	Cocido	2	324.000
 Sunset Maple	80x160	Cocido	2	307.200
+Zadar	45x90	Cocido	2	324.000
 Bizcocho	60x120	Cocido	1	172.800
 Kiel Gray	60x120	Cocido	1	172.800
 Valenciano Retrabajo	80x160	Cocido	1	153.600
 Valenciano Rec	80x160	Rectificado	4	614.400
-Kiel Gray 60x120 REC	60X120	Rectificado	2	345.600
+Kiel Gray 60x120 REC	60X120	Rectificado	1	172.800
+Riviera Rectificado	80x120	Rectificado	1	
 Zadar Rectificado	45x90	Rectificado	1	162.000
-Mesa vacia disponible				50
-Total m² Cocido				1,616.400
+Mesa vacia disponible				51
+Total m² Cocido				1,454.400
 Total m² Pulido				0.000
-Total m² Rectificado				1,122.000
-Total m²				2,738.400
+Total m² Rectificado				949.200
+Total m²				2,403.600
