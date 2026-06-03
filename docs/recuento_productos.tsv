@@ -1,14 +1,16 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Leighton Light	60x120	Cocido	3	518.400
-Amberwood	20x120	Cocido	2	384.000
+Leighton Light	60x120	Cocido	2	345.600
+Amberwood	20x120	Cocido	1	192.000
 Bizcocho	60x120	Cocido	1	172.800
 Caravita Platino Pulido	60x120	Pulido	1	172.800
 Leighton Light Rectificado	60x120	Rectificado	2	345.600
 Amberwood Rectificado	20x120	Rectificado	1	192.000
+Caravita Platino Rectificado	60x120	Rectificado	1	172.800
+Leighton Light Rec 60x60	60x60	Rectificado	1	172.800
 Mesa vacia disponible				63
-Total m² Cocido				1,075.200
+Total m² Cocido				710.400
 Total m² Pulido				172.800
-Total m² Rectificado				537.600
-Total m²				1,785.600
+Total m² Rectificado				883.200
+Total m²				1,766.400
