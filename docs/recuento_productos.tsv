@@ -1,14 +1,15 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Fiorentino Plata	60x120	Cocido	4	691.200
+Fiorentino Plata	60x120	Cocido	3	518.400
+Leighton Light	60x120	Cocido	2	345.600
 Fiorentino Plata P/Retrabajo	60x120	Cocido	1	172.800
-Leighton Light	60x120	Cocido	1	172.800
+Fiorentino Plata Pulido	60x120	Pulido	1	172.800
 Fiorentino Plata Rec	60x120	Rectificado	3	518.400
 Leighton Light Rectificado	60x120	Rectificado	3	518.400
 Vali Gold Rec	20x120	Rectificado	1	192.000
-Mesa vacia disponible				58
+Mesa vacia disponible				59
 Total m² Cocido				1,036.800
-Total m² Pulido				0.000
+Total m² Pulido				172.800
 Total m² Rectificado				1,228.800
-Total m²				2,265.600
+Total m²				2,438.400
