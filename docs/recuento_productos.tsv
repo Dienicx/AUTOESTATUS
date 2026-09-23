@@ -1,10 +1,8 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Piatra Duna	60x120	Cocido	3	518.400
-Lemeck Grafito	45x91	Cocido	2	
-Lanz	45x90	Cocido	1	162.000
-Leigthon Gray 60x120	60x120	Cocido	1	172.800
+Lemeck Grafito	45x91	Cocido	3	
+Piatra Duna	60x120	Cocido	2	345.600
 Trenton Light	45x90	Cocido	1	162.000
 Trenton Sand	45x90	Cocido	1	162.000
 Lemeck Grafito Rectificado	45x90	Rectificado	5	810.000
@@ -12,9 +10,8 @@ Piatra Duna Rectificado	60x120	Rectificado	5	864.000
 Lanz Rectificado	45x90	Rectificado	3	486.000
 Leighton Gray Rec 60x120	60x120	Rectificado	3	518.400
 Mesa SIN tapete	80x120	Rectificado	2	
-Trenton Light Rectificado	45x90	Rectificado	1	162.000
-Mesa vacia disponible				44
-Total m² Cocido				1,177.200
+Mesa vacia disponible				43
+Total m² Cocido				669.600
 Total m² Pulido				0.000
-Total m² Rectificado				2,840.400
-Total m²				4,017.600
+Total m² Rectificado				2,678.400
+Total m²				3,348.000
