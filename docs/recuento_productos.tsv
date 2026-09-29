@@ -1,7 +1,7 @@
 ﻿AUTOESTATUS v1.1.3
 
 **Producto**	**Formato**	**Fase**	**Cantidad**	**AreaTotal_m2**
-Leigthon Light 60x60	60x60	Cocido	5	864.000
+Leigthon Light 60x60	60x60	Cocido	4	691.200
 Livia	60x120	Cocido	3	518.400
 Nolo gray rec	60x120	Cocido	2	345.600
 Belmonte	80x160	Cocido	1	153.600
@@ -11,13 +11,14 @@ kingstone Bone	80x160	Cocido	1	153.600
 Leighton Light Rec 60x60	60x60	Cocido	1	172.800
 Mesa SIN tapete	80x120	Cocido	1	
 Livia Pulido	60x120	Pulido	4	691.200
-Leighton Light Rec 60x60	60x60	Rectificado	6	1,036.800
 Helsinki Rectificado	60x120	Rectificado	5	864.000
+Leighton Light Rec 60x60	60x60	Rectificado	5	864.000
 Livia Rectificado	60x120	Rectificado	3	518.400
 Mesa SIN tapete	80x120	Rectificado	2	
 Trenton Light Rectificado	45x90	Rectificado	2	324.000
-Mesa vacia disponible				37
-Total m² Cocido				2,380.800
+Nolo Smoke Rec	60x120	Rectificado	1	172.800
+Mesa vacia disponible				35
+Total m² Cocido				2,208.000
 Total m² Pulido				691.200
 Total m² Rectificado				2,743.200
-Total m²				5,815.200
+Total m²				5,642.400
